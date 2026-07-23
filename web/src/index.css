@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  /* Prevents iOS Safari from zooming in when a 16px+ input isn't guaranteed elsewhere. */
+  -webkit-text-size-adjust: 100%;
+  overscroll-behavior-y: contain;
+}
+
+/* iOS Safari zooms on focus for inputs with font-size < 16px — keep all inputs at 16px. */
+input,
+select,
+textarea {
+  font-size: 16px;
+}
